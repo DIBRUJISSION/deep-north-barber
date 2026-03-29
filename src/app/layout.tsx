@@ -11,13 +11,13 @@ const defaultMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_AU',
-    url: 'https://deepnorthbarber.com',
+    url: 'https://deepnorthbarber.com.au',
     siteName: 'Deep North Barber',
     title: 'Deep North Barber | Premium Men\'s Haircuts & Beard Grooming in Gordon',
     description: 'Precision barbering and grooming in Gordon, Sydney.',
     images: [
       {
-        url: 'https://deepnorthbarber.com/og-image.jpg',
+        url: 'https://deepnorthbarber.com.au/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Deep North Barber',
@@ -28,7 +28,7 @@ const defaultMetadata: Metadata = {
     card: 'summary_large_image',
     title: 'Deep North Barber',
     description: 'Premium men\'s barbershop in Gordon, Sydney',
-    images: ['https://deepnorthbarber.com/og-image.jpg'],
+    images: ['https://deepnorthbarber.com.au/og-image.jpg'],
   },
 }
 

@@ -118,10 +118,10 @@ After deployment finishes:
 
 ## Step 8: Add Custom Domain (Optional)
 
-If you own `deepnorthbarber.com` or similar:
+If you own `deepnorthbarber.com.au` or similar:
 
 1. In Vercel dashboard, go to **Settings** → **Domains**
-2. Enter your domain: `deepnorthbarber.com`
+2. Enter your domain: `deepnorthbarber.com.au`
 3. Follow DNS setup instructions (changes at domain registrar)
 4. **Wait 24 hours** for DNS propagation
 

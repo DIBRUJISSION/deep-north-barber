@@ -111,7 +111,7 @@ du -sh .next
 
 3. **Add Custom Domain** (optional)
    - Vercel Dashboard → Settings → Domains
-   - Add `deepnorthbarber.com`
+   - Add `deepnorthbarber.com.au`
    - Follow DNS instructions
 
 ### Option B: Netlify (2 minutes)

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, Phone } from 'lucide-react'
 
 export default function Header() {
@@ -11,12 +12,26 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-charcoal">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-3 md:py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold tracking-tight hover:text-brand-bronze transition-colors">
-            DEEP NORTH
-            <span className="block text-xs tracking-widest text-brand-grey mt-1">BARBER</span>
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            {/* Logo Image */}
+            <div className="relative w-10 h-10 md:w-12 md:h-12">
+              <Image
+                src="/logo.jpg"
+                alt="Deep North Barber Logo"
+                width={50}
+                height={50}
+                className="w-full h-full object-contain"
+                priority
+              />
+            </div>
+            {/* Brand Text */}
+            <div className="hidden sm:block">
+              <div className="text-lg font-bold tracking-tight text-brand-bone">DEEP NORTH</div>
+              <div className="text-xs tracking-widest text-brand-grey">BARBER</div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

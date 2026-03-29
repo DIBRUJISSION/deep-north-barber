@@ -36,7 +36,7 @@
 
 3. **Custom Domain**
    - In Vercel dashboard, go to Settings → Domains
-   - Add your domain (e.g., deepnorthbarber.com)
+   - Add your domain (e.g., deepnorthbarber.com.au)
    - Update DNS records (Vercel provides instructions)
 
 4. **Environment Variables** (if needed later)
@@ -136,7 +136,7 @@
    ```nginx
    server {
        listen 80;
-       server_name deepnorthbarber.com www.deepnorthbarber.com;
+       server_name deepnorthbarber.com.au www.deepnorthbarber.com.au;
 
        location / {
            proxy_pass http://localhost:3000;
@@ -152,7 +152,7 @@
 8. **Enable HTTPS (Certbot)**
    ```bash
    sudo apt-get install certbot python3-certbot-nginx
-   sudo certbot --nginx -d deepnorthbarber.com -d www.deepnorthbarber.com
+   sudo certbot --nginx -d deepnorthbarber.com.au -d www.deepnorthbarber.com.au
    ```
 
 9. **Restart Nginx**
