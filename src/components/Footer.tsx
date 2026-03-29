@@ -75,7 +75,7 @@ export default function Footer() {
             <h4 className="font-bold tracking-wide text-brand-bone mb-6 text-sm">Follow</h4>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/deepnorthbarber/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-brand-charcoal border border-brand-steel-grey flex items-center justify-center text-brand-grey hover:text-brand-bronze hover:border-brand-bronze transition-all"
@@ -84,7 +84,7 @@ export default function Footer() {
                 <Instagram size={18} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Deepnorthbarber/61587487790286/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-brand-charcoal border border-brand-steel-grey flex items-center justify-center text-brand-grey hover:text-brand-bronze hover:border-brand-bronze transition-all"
