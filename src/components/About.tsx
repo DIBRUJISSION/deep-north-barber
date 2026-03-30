@@ -8,16 +8,18 @@ export default function About() {
     <section id="about" className="section-container bg-brand-black">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Ervin Portrait Image */}
+          {/* Erwin Portrait Image */}
           <ScrollReveal className="order-2 lg:order-1">
-            <Image
-              src="/images/ervin.jpg"
-              alt="Ervin - Master Barber at Deep North Barber"
-              width={800}
-              height={600}
-              priority
-              className="w-full h-auto rounded-lg shadow-2xl object-cover hover:shadow-3xl transition-shadow duration-300"
-            />
+            <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
+              <Image
+                src="/images/erwin Photo.png"
+                alt="Erwin - Master Barber at Deep North Barber"
+                fill
+                priority
+                className="object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/40 via-transparent to-transparent" />
+            </div>
           </ScrollReveal>
 
           {/* Content - Right side */}

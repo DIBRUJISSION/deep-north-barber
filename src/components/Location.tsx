@@ -1,6 +1,6 @@
 'use client'
 
-import { MapPin, Phone, Clock } from 'lucide-react'
+import { Phone, Clock } from 'lucide-react'
 
 export default function Location() {
   return (
@@ -9,13 +9,19 @@ export default function Location() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
           {/* Left: Map and Address */}
           <div>
-            {/* Map placeholder */}
-            <div className="image-placeholder-wide mb-8 border-2 border-brand-steel-grey">
-              <div className="w-full h-full bg-gradient-to-br from-brand-steel-grey/30 to-brand-charcoal flex items-center justify-center flex-col gap-4">
-                <MapPin className="text-brand-bronze" size={32} />
-                <span className="text-brand-grey text-sm">Google Maps Embed / Location Map</span>
-                <span className="text-xs text-brand-steel-grey">Shop 2/860 Pacific Highway, Gordon NSW 2072</span>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="mb-8 rounded-lg overflow-hidden border-2 border-brand-steel-grey">
+              <iframe
+                src="https://www.google.com/maps?q=Shop+2%2F860+Pacific+Highway,+Gordon+NSW+2072&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Deep North Barber location"
+                className="w-full"
+              />
             </div>
 
             {/* Address block */}
